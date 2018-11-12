@@ -6,17 +6,19 @@ namespace KoenZomers.Tools.SunSetRiseLib
     {
         static void Main(string[] args)
         {
+            // Use https://www.esrl.noaa.gov/gmd/grad/solcalc/ to validate the outcome against
+
             // Date for which to calculate the sunrise and sunset
             var date = DateTime.Today;
 
             // Latitude for which to calculate the sunrise/sunset
-            var latitude = 52.3702157;
+            var latitude = -12.46;
 
             // Longitude for which to calculate the sunrise/sunset
-            var longitude = 4.8951679;
+            var longitude = 130.842;
 
             // Hours from UTC which this location is in
-            var utcOffset = TimeZone.CurrentTimeZone.GetUtcOffset(DateTime.Now).Hours;
+            var utcOffset = 9.5;
 
             // Write the output to the screen
             Console.WriteLine("Date: " + date.ToLongDateString());

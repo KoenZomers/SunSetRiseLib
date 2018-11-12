@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SampleOutput.png = SampleOutput.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunSetRiseLib.UnitTest", "SunSetRiseLib.UnitTest\SunSetRiseLib.UnitTest.csproj", "{6E65FD07-8457-4484-86E5-6F4D704F00D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +30,15 @@ Global
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E65FD07-8457-4484-86E5-6F4D704F00D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E65FD07-8457-4484-86E5-6F4D704F00D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E65FD07-8457-4484-86E5-6F4D704F00D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E65FD07-8457-4484-86E5-6F4D704F00D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F74186F2-129B-44FF-A298-BB4F5F4DEB88}
 	EndGlobalSection
 EndGlobal
