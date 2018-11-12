@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KoenZomers.Tools.SunSetRiseLib</name>
+    </assembly>
+    <members>
+        <member name="T:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib">
+            <summary>
+            Library to allow calculating sunrise and sunset for a specific coordinate on the world
+            </summary>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.RadianToDegrees(System.Double)">
+            <summary>
+            Convert radian angle to degrees
+            </summary>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.DegreesToRadian(System.Double)">
+            <summary>
+            Convert degree angle to radians
+            </summary>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateJulianDay(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Calculates the Julian day from calendar day. See https://en.wikipedia.org/wiki/Julian_day.
+            </summary>
+            <param name="year"> 4 digit year</param>
+            <param name="month">January = 1</param>
+            <param name="day">1 - 31</param>
+            <returns>The Julian day corresponding to the date</returns>
+            <remarks>Number is returned for start of day. Fractional days should be	added later.</remarks>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateJulianDay(System.DateTime)">
+            <summary>
+            Calculates the Julian day from calendar day. See https://en.wikipedia.org/wiki/Julian_day.
+            </summary>
+            <param name="date">Calendar day to calculate the Julian Day for</param>
+            <returns>The Julian day corresponding to the date</returns>
+            <remarks>Number is returned for start of day. Fractional days should be	added later.</remarks>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateTimeJulianCentury(System.Double)">
+            <summary>
+            Calculates the Julian Day compared to the year 2000
+            </summary>
+            <param name="julianDay">The Julian Day to convert</param>
+            <returns>Corresponding Julian Day calculated from the year 2000</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateGeometricMeanLongitudeSun(System.Double)">
+            <summary>
+            Calculate the Geometric Mean Longitude of the Sun	
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>The Geometric Mean Longitude of the Sun in degrees	</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateGeometricMeanAnomalySun(System.Double)">
+            <summary>
+            Calculate the Geometric Mean Anomaly of the Sun	
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>The Geometric Mean Anomaly of the Sun in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateEccentricityEarthOrbit(System.Double)">
+            <summary>
+            Calculate the eccentricity of earth's orbit
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>The unitless eccentricity</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunEqOfCenter(System.Double)">
+            <summary>
+            Calculate the equation of center for the sun
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>The equation of center for the sun	in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunTrueLong(System.Double)">
+            <summary>
+            Calculate the true longitude of the sun
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Sun's true longitude in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunApparentLong(System.Double)">
+            <summary>
+            Calculate the apparent longitude of the sun
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Sun's apparent longitude in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateMeanObliquityOfEcliptic(System.Double)">
+            <summary>
+            Calculate the mean obliquity of the ecliptic
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Mean obliquity in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateObliquityCorrection(System.Double)">
+            <summary>
+            Calculate the corrected obliquity of the ecliptic
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Corrected obliquity in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunDeclination(System.Double)">
+            <summary>
+            Calculate the declination of the sun
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Sun's declination in degrees</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateEquationOfTime(System.Double)">
+            <summary>
+            Calculate the difference between true solar time and mean solar time
+            </summary>
+            <param name="t">Number of Julian centuries since the year 2000</param>
+            <returns>Equation of time in minutes of time</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateHourAngleSunrise(System.Double,System.Double)">
+            <summary>
+            Calculate the hour angle of the sun at sunrise for the latitude
+            </summary>
+            <param name="lat">Latitude of observer in degrees</param>
+            <param name="solarDec">Declination angle of sun in degrees</param>
+            <returns>Hour angle of sunrise in radians</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunSetUTC(System.Double,System.Double,System.Double)">
+            <summary>
+            Calculate the Universal Coordinated Time (UTC) of sunset for the given day at the given location on earth
+            </summary>
+            <param name="JD">julian day</param>
+            <param name="latitude">Latitude of observer in degrees</param>
+            <param name="longitude">Longitude of observer in degrees</param>
+            <returns>Time in minutes from zero Z</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.CalculateSunRiseUTC(System.Double,System.Double,System.Double)">
+            <summary>
+            Calculate the Universal Coordinated Time (UTC) of sunrise for the given day at the given location on earth
+            </summary>
+            <param name="JD">julian day</param>
+            <param name="latitude">Latitude of observer in degrees</param>
+            <param name="longitude">Longitude of observer in degrees</param>
+            <returns>Time in minutes from zero Z</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.GetDateTime(System.Double,System.Double,System.DateTime,System.Boolean)">
+            <summary>
+            Create a datetime out of the variables
+            </summary>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.GetDateTime(System.Double,System.DateTime)">
+            <summary>
+            Create a datetime out of the variables
+            </summary>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunriseToday(System.Double,System.Double)">
+            <summary>
+            Calculate the time of the sunrise today at the provided coordinates
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunrise</param>
+            <param name="longitude">Longitude for which to calculate the sunrise</param>
+            <returns>DateTime containing the time when the sun will rise today</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunriseAt(System.Double,System.Double,System.DateTime)">
+            <summary>
+            Calculate the time of the sunrise at the provided coordinates at the provided date
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunrise</param>
+            <param name="longitude">Longitude for which to calculate the sunrise</param>
+            <param name="date">Date for which to calculate the sunrise</param>
+            <returns>DateTime containing the time when the sun will rise at the provided date</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunriseAt(System.Double,System.Double,System.DateTime,System.Double)">
+            <summary>
+            Calculate the time of the sunrise at the provided coordinates at the provided date in the provided UTC offset
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunrise</param>
+            <param name="longitude">Longitude for which to calculate the sunrise</param>
+            <param name="date">Date for which to calculate the sunrise</param>
+            <param name="utcOffset">Hours from UTC in which the location currently is in</param>
+            <returns>DateTime containing the time when the sun will rise at the provided date</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunsetToday(System.Double,System.Double)">
+            <summary>
+            Calculate the time of the sunset today at the provided coordinates
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunset</param>
+            <param name="longitude">Longitude for which to calculate the sunset</param>
+            <returns>DateTime containing the time when the sun will set today</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunsetAt(System.Double,System.Double,System.DateTime)">
+            <summary>
+            Calculate the time of the sunset at the provided coordinates at the provided date
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunset</param>
+            <param name="longitude">Longitude for which to calculate the sunset</param>
+            <param name="date">Date for which to calculate the sunset</param>
+            <returns>DateTime containing the time when the sun will set at the provided date</returns>
+        </member>
+        <member name="M:KoenZomers.Tools.SunSetRiseLib.SunSetRiseLib.SunsetAt(System.Double,System.Double,System.DateTime,System.Double)">
+            <summary>
+            Calculate the time of the sunset at the provided coordinates at the provided date in the provided UTC offset
+            </summary>
+            <param name="latitude">Latitude for which to calculate the sunset</param>
+            <param name="longitude">Longitude for which to calculate the sunset</param>
+            <param name="date">Date for which to calculate the sunset</param>
+            <param name="utcOffset">Hours from UTC in which the location currently is in</param>
+            <returns>DateTime containing the time when the sun will set at the provided date</returns>
+        </member>
+    </members>
+</doc>
