@@ -43,7 +43,7 @@ Version 1.2.0.0 - November 12, 2018
 - Documentation XML is now included in the NuGet package so you'll see the method documentation in the project where you add the NuGet package
 - This update may contain non backwards compatible changes in method calls. Please validate your code and the expected outcome when upgrading.
 
-Huge thanks to @microalps for doing all the hard work behind [this excellent update](https://github.com/KoenZomers/SunSetRiseLib/pull/1)!
+Huge thanks to [microalps](https://github.com/microalps) for doing all the hard work behind [this excellent update](https://github.com/KoenZomers/SunSetRiseLib/pull/1)!
 
 Version 1.1.2.1 - October 8, 2017
 
