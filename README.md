@@ -33,6 +33,10 @@ Also available as NuGet Package: [KoenZomers.SunSetRise](https://www.nuget.org/p
 
 ## Version History
 
+Version 1.2.0.1 - March 3, 2019
+
+- Removed build for .NET Framework 2.0 and 3.5 as these are not supported anymore. Recreated package to target .NET Framework 4.0, 4.5 and 4.6 and .NET Standard 1.1 and 2.0
+
 Version 1.2.0.0 - November 12, 2018
 
 - Change in the way the sunrise and sunsets are being calculated following https://www.esrl.noaa.gov/gmd/grad/solcalc/
