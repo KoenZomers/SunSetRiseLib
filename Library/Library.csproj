@@ -2,18 +2,18 @@
   <PropertyGroup>
     <RootNamespace>KoenZomers.Tools.SunSetRiseLib</RootNamespace>
     <AssemblyName>KoenZomers.Tools.SunSetRiseLib</AssemblyName>
-    <TargetFrameworks>netstandard1.1;netstandard2.0;net40;net45;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net452;net472</TargetFrameworks>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
-    <AssemblyVersion>1.2.0.2</AssemblyVersion>
-    <FileVersion>1.2.0.2</FileVersion>
-    <Version>1.2.0.2</Version>
+    <AssemblyVersion>1.2.0.3</AssemblyVersion>
+    <FileVersion>1.2.0.3</FileVersion>
+    <Version>1.2.0.3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Koen Zomers</Authors>
     <Company>Koen Zomers</Company>
-    <Description>Library in .NET Standard 2.0 to calculate the sunrise and sunset at any given date anywhere in the world</Description>
+    <Description>Library in .NET Standard 2.0, .NET Framework 4.5.2, .NET Framework 4.7.2 and .NET Core 2.0 to calculate the sunrise and sunset at any given date anywhere in the world</Description>
     <PackageProjectUrl>https://github.com/KoenZomers/SunSetRiseLib</PackageProjectUrl>
-    <PackageReleaseNotes>Removed build for .NET Framework 2.0 and 3.5 as these are not supported anymore. Recreated package to target .NET Framework 4.0, 4.5 and 4.6 and .NET Standard 1.1 and 2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Recreated package to target .NET Standard 2.0, .NET Framework 4.5.2, .NET Framework 4.7.2 and .NET Core 2.0</PackageReleaseNotes>
     <PackageId>KoenZomers.SunSetRise</PackageId>
     <Product>KoenZomers.SunSetRise</Product>
   </PropertyGroup>
