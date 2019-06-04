@@ -1,6 +1,6 @@
 # Sunrise and sunset calculation in C#
 
-Heavily cleaned up and simplified C# library to calculate the sunrise and sunset for a location on earth on any given date. Compiled for .NET Standard 2.0.
+Heavily cleaned up and simplified C# library to calculate the sunrise and sunset for a location on earth on any given date. Compiled for .NET Standard 2.0, .NET Framework 4.5.2, .NET Framework 4.7.2 and .NET Core 2.0.
 
 ## Usage
 
@@ -32,6 +32,10 @@ Console.WriteLine("SunSet: " + SunSetRiseLib.SunsetAt(latitude, longitude, date,
 Also available as NuGet Package: [KoenZomers.SunSetRise](https://www.nuget.org/packages/KoenZomers.SunSetRise)
 
 ## Version History
+
+Version 1.2.0.3 - June 4, 2019
+
+- Recreated package to target .NET Standard 2.0, .NET Framework 4.5.2, .NET Framework 4.7.2 and .NET Core 2.0
 
 Version 1.2.0.1 - March 3, 2019
 
