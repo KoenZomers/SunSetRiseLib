@@ -1,3 +1,5 @@
+> Deprecated this repository as it's build against old .NET versions and might not always return accurate results. I recommend using [SunCalcNet](https://github.com/kostebudinoski/SunCalcNet) instead.
+
 # Sunrise and sunset calculation in C#
 
 Heavily cleaned up and simplified C# library to calculate the sunrise and sunset for a location on earth on any given date. Compiled for .NET Standard 2.0, .NET Framework 4.5.2, .NET Framework 4.7.2 and .NET Core 2.0.
